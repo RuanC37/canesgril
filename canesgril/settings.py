@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.railway.app', 'localhost', '1004.18.11.246', '127.0.0.1']
+ALLOWED_HOSTS = ['.railway.app', 'localhost', '104.18.11.246', '127.0.0.1']
 
 
 
@@ -138,7 +138,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CLOUDINARY_CLOUD_NAME = os.environ.get('CLOUDINARY_CLOUD_NAME')
-CLOUDINARY_API_KEY = os.environ.get('CLOUDINARYU_API_KEY')
+CLOUDINARY_API_KEY = os.environ.get('CLOUDINARY_API_KEY')
 CLOUDINARY_API_SECRET = os.environ.get('CLOUDINARY_API_SECRET')
 
 DEFAULT_FILE_STORAGE = 'cloudinary.models.CloudinaryStorage'
@@ -148,7 +148,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary.models.CloudinaryStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSFR_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 CSRF_TRUSTED_ORIGIN = [
     'https://*.railway.app'
