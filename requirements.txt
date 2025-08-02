@@ -1,0 +1,10 @@
+asgiref
+psycopg2
+python-dotenv
+Pillow
+sqlparse
+tzdata
+cloudinary 
+django-cloudinary-storage
+whitenoise
+gunicorn
